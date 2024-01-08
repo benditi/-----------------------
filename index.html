@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mines Sweeper</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body onload="initGame()">
+    <button onclick="initGame()">&#128522</button>
+    <table border="1" cellpadding="10">
+        <tbody class="board">
+        </tbody>
+    </table>
+    <div class="selector">
+        <label for="levels">Choose a level:</label>
+        <select name="levels" id="levels" onchange="initGame()">
+            <option value="Easy">Easy</option>
+            <option value="Hard">Hard</option>
+            <option value="Extremley">Extremley Hard</option>
+        </select>
+    </div>
+    <div class="timer">Game Time: 0.000 seconds</div>
+    <div class="footer">David Ben Ishai</div>
+    <div class="lives"><span></span> lives left</div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
